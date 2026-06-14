@@ -1,0 +1,33 @@
+.cursor {
+  position: fixed;
+  top: -4px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.2s;
+}
+
+.follower {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--red);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease, background-color 0.3s ease;
+}
+
+.expanded {
+  width: 60px;
+  height: 60px;
+  top: -30px;
+  left: -30px;
+  background-color: rgba(211, 0, 0, 0.08);
+}

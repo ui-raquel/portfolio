@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #D30000;
+  --pink: #FDD3CF;
+  --black: #2C2B2B;
+
+  --font: 'Geologica', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--pink);
+  color: var(--black);
+  overflow-x: hidden;
+  cursor: none;
+}
