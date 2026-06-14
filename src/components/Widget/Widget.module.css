@@ -5,6 +5,12 @@
   transition: transform 0.2s ease;
 }
 
+.fileName {
+  font-size: 0.75rem;
+  color: var(--black);
+  font-weight: 400;
+}
+
 .fileIcon {
   position: fixed;
   display: flex;
