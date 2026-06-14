@@ -6,8 +6,12 @@ import Dock from '../components/Dock/Dock'
 import PostIt from '../components/PostIt/PostIt'
 import { projetos } from '../data/projetos'
 import styles from './Projects.module.css'
+import WidgetAbout from '../components/Widget/WidgetAbout'
+import WidgetFiles from '../components/Widget/WidgetFiles'
 
 const DEFAULT_TEXTO = 'passa o cursor numa pasta para saberes mais sobre cada projeto :)'
+
+
 
 function Projects() {
   const [techAtiva, setTechAtiva] = useState(null)
@@ -53,6 +57,10 @@ function Projects() {
         </AnimatePresence>
       </motion.div>
 
+      <WidgetAbout />
+      <WidgetFiles />
+      {/* <PostIt texto={postitTexto} />
+      <Dock ativa={techAtiva} onSelect={setTechAtiva} /> */}
       <PostIt texto={postitTexto} />
       <Dock ativa={techAtiva} onSelect={setTechAtiva} />
     </div>

@@ -1,0 +1,109 @@
+.fileImg {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.fileIcon {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  width: 90px;
+  z-index: 50;
+}
+
+.fileQuemSou {
+  bottom: 12rem;
+  right: 8rem;
+}
+
+.fileContactos {
+  bottom: 12rem;
+  right: 18rem;
+}
+
+.alertBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background: rgba(235, 235, 235, 0.85);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(44, 43, 43, 0.25);
+  z-index: 200;
+  overflow: hidden;
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  position: relative;
+  border-bottom: 1px solid rgba(44, 43, 43, 0.1);
+}
+
+.alertDots {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.dot1, .dot2, .dot3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot1 { background-color: #FF5F57; }
+.dot2 { background-color: #FEBC2E; }
+.dot3 { background-color: #28C840; }
+
+.alertTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.alertText {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: var(--black);
+  line-height: 1.6;
+  padding: 1.2rem 1.5rem;
+}
+
+.alertText span {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.alertBtn {
+  display: block;
+  width: calc(100% - 3rem);
+  margin: 0 1.5rem 1.2rem;
+  padding: 0.4rem;
+  background: rgba(211, 0, 0, 0.1);
+  border: 1px solid rgba(211, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--red);
+  cursor: pointer;
+  font-family: var(--font);
+  transition: background 0.2s ease;
+}
+
+.alertBtn:hover {
+  background: rgba(211, 0, 0, 0.2);
+}
