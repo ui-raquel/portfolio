@@ -1,0 +1,53 @@
+.postit {
+  position: fixed;
+  bottom: 7rem;
+  right: 2rem;
+  width: 200px;
+  background-color: #FFF0A0;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 3px 4px 12px rgba(44, 43, 43, 0.2);
+  transform: rotate(2deg);
+  z-index: 50;
+}
+
+.header {
+  margin-bottom: 0.75rem;
+}
+
+/* .lines {
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: rgba(44, 43, 43, 0.15);
+  border-radius: 1px;
+  position: relative;
+}
+
+.lines::before,
+.lines::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background-color: rgba(44, 43, 43, 0.15);
+  border-radius: 1px;
+}
+
+.lines::before {
+  top: 6px;
+  width: 90%;
+}
+
+.lines::after {
+  top: 12px;
+  width: 75%;
+} */
+
+.texto {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #5a4a00;
+  line-height: 1.5;
+  font-family: var(--font);
+}
