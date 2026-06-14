@@ -1,0 +1,69 @@
+.folder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  width: 100px;
+  transition: opacity 0.3s ease;
+}
+
+.dimmed {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(211, 0, 0, 0.2));
+}
+
+.nome {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--black);
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(253, 211, 207, 0.8);
+  max-width: 90px;
+  line-height: 1.2;
+}
+
+.tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  bottom: unset;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(44, 43, 43, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--pink);
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  top: unset;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: rgba(44, 43, 43, 0.85);
+}
