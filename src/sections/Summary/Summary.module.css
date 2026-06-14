@@ -5,6 +5,7 @@
 
 .quoteSection {
   padding: 8rem 4rem;
+  /* padding-top: 0; */
   display: flex;
   justify-content: center;
 }
