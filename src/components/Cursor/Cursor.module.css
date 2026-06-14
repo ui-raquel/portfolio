@@ -31,3 +31,21 @@
   left: -30px;
   background-color: rgba(211, 0, 0, 0.08);
 }
+
+.emoji {
+  font-size: 10px;
+  color: var(--red);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  position: absolute;
+  line-height: 1;
+}
+
+.emojiVisible {
+  opacity: 1;
+}
+
+.followerDrag {
+  border-color: var(--red);
+  opacity: 0.3;
+}

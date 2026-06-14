@@ -9,6 +9,10 @@ function WidgetAbout() {
     <AnimatePresence>
       {visible && (
         <motion.div
+          data-draggable="true"
+          drag
+          dragMomentum={false}
+          whileDrag={{ scale: 1.02, zIndex: 300 }}
           className={styles.alertBox}
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}

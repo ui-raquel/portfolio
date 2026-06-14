@@ -4,6 +4,7 @@ import styles from './PostIt.module.css'
 function PostIt({ texto }) {
   return (
     <motion.div
+      data-draggable="true"
       className={styles.postit}
       drag
       dragMomentum={false}

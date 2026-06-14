@@ -4,10 +4,12 @@ import styles from './Cursor.module.css'
 function Cursor() {
   const cursorRef = useRef(null)
   const followerRef = useRef(null)
+  const emojiRef = useRef(null)
 
   useEffect(() => {
     const cursor = cursorRef.current
     const follower = followerRef.current
+    const emoji = emojiRef.current
 
     let mouseX = 0, mouseY = 0
     let followerX = 0, followerY = 0
@@ -18,37 +20,54 @@ function Cursor() {
       cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`
     }
 
-    const onMouseEnterLink = () => follower.classList.add(styles.expanded)
-    const onMouseLeaveLink = () => follower.classList.remove(styles.expanded)
+    const onMouseOver = (e) => {
+      const target = e.target.closest('[data-draggable]')
+      const interactive = e.target.closest('a, button, li')
+
+      if (target) {
+        cursor.style.backgroundColor = 'transparent'
+        cursor.style.borderRadius = '0'
+        emoji.classList.add(styles.emojiVisible)
+        follower.classList.add(styles.followerDrag)
+        follower.classList.remove(styles.expanded)
+      } else if (interactive) {
+        cursor.style.backgroundColor = 'var(--red)'
+        cursor.style.borderRadius = '50%'
+        emoji.classList.remove(styles.emojiVisible)
+        follower.classList.add(styles.expanded)
+        follower.classList.remove(styles.followerDrag)
+      } else {
+        cursor.style.backgroundColor = 'var(--red)'
+        cursor.style.borderRadius = '50%'
+        emoji.classList.remove(styles.emojiVisible)
+        follower.classList.remove(styles.expanded)
+        follower.classList.remove(styles.followerDrag)
+      }
+    }
 
     const animate = () => {
       followerX += (mouseX - followerX) * 0.1
       followerY += (mouseY - followerY) * 0.1
       follower.style.transform = `translate(${followerX}px, ${followerY}px)`
+
       requestAnimationFrame(animate)
     }
 
     document.addEventListener('mousemove', onMouseMove)
+    document.addEventListener('mouseover', onMouseOver)
     animate()
-
-    const interactives = document.querySelectorAll('a, button, li')
-    interactives.forEach(el => {
-      el.addEventListener('mouseenter', onMouseEnterLink)
-      el.addEventListener('mouseleave', onMouseLeaveLink)
-    })
 
     return () => {
       document.removeEventListener('mousemove', onMouseMove)
-      interactives.forEach(el => {
-        el.removeEventListener('mouseenter', onMouseEnterLink)
-        el.removeEventListener('mouseleave', onMouseLeaveLink)
-      })
+      document.removeEventListener('mouseover', onMouseOver)
     }
   }, [])
 
   return (
     <>
-      <div ref={cursorRef} className={styles.cursor} />
+      <div ref={cursorRef} className={styles.cursor}>
+        <span ref={emojiRef} className={styles.emoji}>✦</span>
+      </div>
       <div ref={followerRef} className={styles.follower} />
     </>
   )
