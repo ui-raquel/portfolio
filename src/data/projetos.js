@@ -12,6 +12,55 @@ export const projetos = [
         descricao: 'Proposta de prototipagem que visa reforçar a ligação entre a marca VITO TOOLS e os seus utilizadores.',
         tecnologias: ['figma'],
         icone: '/src/assets/folders/folder-myvito.png',
+        cores: {
+            primary: '#FFB71B',
+            secondary: '#000000',
+            text: '#000000',
+            textLight: '#FFB71B',
+            bg: '#000000',
+        },
+        hero: {
+            frase: 'A ferramenta certa, na palma da tua mão.',
+            sub: 'Projeto Final de Licenciatura · 2024/25',
+            equipa: 'Raquel Neves, Leandro Oliveira, Maria Lourenço e Ivo Marcelino',
+            logo: '/src/assets/logos/myvito.svg',
+        },
+        contexto: 'A My VITO é uma proposta de prototipagem desenvolvida em Figma, que visa reforçar a ligação entre a marca VITO TOOLS, os seus clientes B2B e os consumidores finais. Este protótipo combina funcionalidades práticas para utilizadores amadores e profissionais de ferramentas, promovendo uma relação mais próxima da marca com o utilizador. Através da simulação de integrações com inteligência artificial, My VITO propõe recomendações personalizadas, conteúdos educativos e funcionalidades de gamificação para incentivar a fidelização.',
+        features: [
+            {
+                titulo: 'Chatbot com IA',
+                descricao: 'Esclarece dúvidas, recebe recomendações e resolve problemas técnicos de forma rápida e eficiente, sem necessidade de aguardar atendimento humano.',
+                emoji: '🤖',
+            },
+            {
+                titulo: 'Assistência Técnica',
+                descricao: 'Contacto direto com o serviço de assistência e agendamento imediato de reparações, garantindo apoio ao utilizador em qualquer momento.',
+                emoji: '🔧',
+            },
+            {
+                titulo: 'Check-in / Check-out',
+                descricao: 'Sistema que regista automaticamente quando uma ferramenta é usada ou devolvida por um membro da equipa, facilitando a rastreabilidade em contexto profissional.',
+                emoji: '📋',
+            },
+            {
+                titulo: 'Diagnóstico IoT',
+                descricao: 'Integração com tecnologia IoT para diagnósticos automáticos das ferramentas, identificando falhas e necessidades de manutenção em tempo real.',
+                emoji: '📡',
+            },
+            {
+                titulo: 'Localização de Ferramentas',
+                descricao: 'Localiza rapidamente ferramentas perdidas, especialmente útil para equipas em obra ou empresas com grande volume de equipamentos.',
+                emoji: '📍',
+            },
+        ],
+        capa: '/src/assets/mockups/myvito/myvito-ecras.png',
+        mockups: [
+            '/src/assets/mockups/myvito/vito-assistencia.png',
+            '/src/assets/mockups/myvito/vito-chatbot.png',
+            '/src/assets/mockups/myvito/vito-checkin.png',
+            '/src/assets/mockups/myvito/vito-iot.png',
+            '/src/assets/mockups/myvito/vito-loc.png',
+        ],
     },
     {
         id: 'evento',
