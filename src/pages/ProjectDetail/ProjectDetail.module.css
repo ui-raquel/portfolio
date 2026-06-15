@@ -119,73 +119,61 @@
   will-change: transform;
 }
 
-/* FEATURES */
+/* Feaures e mockups */
+
 .features {
-    padding: 8rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4rem 8rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 
-.features .sectionTitle {
-    margin-bottom: 3rem;
+.featureRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
 }
 
-.featuresGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
+.featureRowReverse {
+  direction: rtl;
 }
 
-.featureCard {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 2rem;
-    cursor: default;
-    transition: border-color 0.3s ease;
+.featureRowReverse > * {
+  direction: ltr;
 }
 
-.featureCard:hover {
-    border-color: var(--p-primary);
+.featureText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.featureEmoji {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.featureTitulo {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--p-primary);
-    margin-bottom: 0.75rem;
+.featureIndex {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--p-primary);
+  line-height: 1;
 }
 
 .featureDesc {
-    font-size: 0.88rem;
-    font-weight: 300;
-    line-height: 1.7;
-    color: var(--p-textLight);
-    opacity: 0.8;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--p-textLight);
+  opacity: 0.85;
 }
 
-/* MOCKUPS */
-.mockups {
-    padding: 8rem;
-}
-
-.mockups .sectionTitle {
-    margin-bottom: 3rem;
-}
-
-.mockupsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+.featureMockup {
+  display: flex;
+  justify-content: center;
 }
 
 .mockupImg {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.25));
+  border-radius: 12px;
 }

@@ -5,6 +5,48 @@ import styles from './ProjectDetail.module.css'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import {
+    BotMessageSquare, Wrench, Clipboard, WifiHigh, MapPin,
+    Globe, MonitorPlay, Smartphone,
+    Barcode, ListChecks, Trophy, Star,
+    Coffee, Map, UsersRound, MessagesSquare, BookOpen,
+    Utensils, Funnel, Brain, NotebookPen,
+    CookingPot, Images, HeartPulse, Sparkle,
+    Database, Cpu, ChartArea
+} from 'lucide-react'
+
+const iconMap = {
+    BotMessageSquare: <BotMessageSquare size={32} weight="bold" />,
+    Wrench: <Wrench size={32} weight="bold" />,
+    Clipboard: <Clipboard size={32} weight="bold" />,
+    WifiHigh: <WifiHigh size={32} weight="bold" />,
+    MapPin: <MapPin size={32} weight="bold" />,
+    Globe: <Globe size={32} weight="bold" />,
+    MonitorPlay: <MonitorPlay size={32} weight="bold" />,
+    Smartphone: <Smartphone size={32} weight="bold" />,
+    Barcode: <Barcode size={32} weight="bold" />,
+    ListChecks: <ListChecks size={32} weight="bold" />,
+    Trophy: <Trophy size={32} weight="bold" />,
+    Star: <Star size={32} weight="bold" />,
+    Coffee: <Coffee size={32} weight="bold" />,
+    Map: <Map size={32} weight="bold" />,
+    UsersRound: <UsersRound size={32} weight="bold" />,
+    MessagesSquare: <MessagesSquare size={32} weight="bold" />,
+    BookOpen: <BookOpen size={32} weight="bold" />,
+    Utensils: <Utensils size={32} weight="bold" />,
+    Funnel: <Funnel size={32} weight="bold" />,
+    Brain: <Brain size={32} weight="bold" />,
+    NotebookPen: <NotebookPen size={32} weight="bold" />,
+    CookingPot: <CookingPot size={32} weight="bold" />,
+    Images: <Images size={32} weight="bold" />,
+    HeartPulse: <HeartPulse size={32} weight="bold" />,
+    Sparkle: <Sparkle size={32} weight="bold" />,
+    Database: <Database size={32} weight="bold" />,
+    Cpu: <Cpu size={32} weight="bold" />,
+    ChartArea: <ChartArea size={32} weight="bold" />,
+}
+
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -60,6 +102,7 @@ function ProjectDetail() {
                         alt=""
                         aria-hidden="true"
                         className={styles.heroBgLogo}
+                        style={hero.logoStyle || {}}
                     />
                 )}
                 <motion.p
@@ -137,66 +180,43 @@ function ProjectDetail() {
                 </div>
             )}
 
-            {/* FEATURES */}
+            {/* FEATURES + MOCKUPS */}
             <section className={styles.features}>
-                <motion.h2
-                    className={styles.sectionTitle}
-                    variants={fadeUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                >
-                    Features
-                </motion.h2>
-                <div className={styles.featuresGrid}>
-                    {features.map((f, i) => (
+                {features.map((f, i) => {
+                    const Icon = iconMap[f.icon]
+                    return (
                         <motion.div
                             key={f.titulo}
-                            className={styles.featureCard}
+                            className={`${styles.featureRow} ${i % 2 !== 0 ? styles.featureRowReverse : ''}`}
                             variants={fadeUp}
                             initial="hidden"
                             whileInView="visible"
                             viewport={{ once: true }}
-                            custom={i * 0.1}
-                            whileHover={{ y: -6, transition: { duration: 0.2 } }}
+                            custom={0.1}
                         >
-                            <span className={styles.featureEmoji}>{f.emoji}</span>
-                            <h3 className={styles.featureTitulo}>{f.titulo}</h3>
-                            <p className={styles.featureDesc}>{f.descricao}</p>
+                            <div className={styles.featureText}>
+                                <p className={styles.featureIndex}>  {Icon && <span style={{ color: cores.primary }}>{Icon}</span>} {f.titulo}</p>
+                                <p className={styles.featureDesc}>{f.descricao}</p>
+                            </div>
+                            {mockups[i] && (
+                                <motion.div
+                                    className={styles.featureMockup}
+                                    initial={{ opacity: 0, x: i % 2 === 0 ? 60 : -60 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                                >
+                                    <img
+                                        src={mockups[i]}
+                                        alt={f.titulo}
+                                        className={styles.mockupImg}
+                                    />
+                                </motion.div>
+                            )}
                         </motion.div>
-                    ))}
-                </div>
+                    )
+                })}
             </section>
-
-            {/* MOCKUPS */}
-            {mockups && mockups.length > 0 && (
-                <section className={styles.mockups}>
-                    <motion.h2
-                        className={styles.sectionTitle}
-                        variants={fadeUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                    >
-                        Mockups
-                    </motion.h2>
-                    <div className={styles.mockupsGrid}>
-                        {mockups.map((src, i) => (
-                            <motion.img
-                                key={i}
-                                src={src}
-                                alt={`${projeto.nome} mockup ${i + 1}`}
-                                className={styles.mockupImg}
-                                variants={fadeUp}
-                                initial="hidden"
-                                whileInView="visible"
-                                viewport={{ once: true }}
-                                custom={i * 0.15}
-                            />
-                        ))}
-                    </div>
-                </section>
-            )}
 
         </div>
     )

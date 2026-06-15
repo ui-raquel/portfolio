@@ -5,6 +5,49 @@ export const projetos = [
         descricao: 'Plataforma digital dedicada à promoção do bem-estar físico e mental da população sénior.',
         tecnologias: ['figma', 'html', 'css', 'javascript'],
         icone: '/src/assets/folders/folder-maisativo.png',
+        cores: {
+            primary: '#FF9800',
+            secondary: '#FFFBF6',
+            text: '#2C2B2B',
+            textLight: '#2C2B2B',
+            bg: '#FFFBF6',
+        },
+        hero: {
+            frase: 'Cada dia é uma oportunidade para viver melhor.',
+            sub: 'Laboratório Multimédia 3 · 2023/24',
+            equipa: 'Raquel Neves, Sara Pombo, Núria Pereira e Bruno Sousa',
+            logo: '/src/assets/logos/maisativo.png',
+        },
+        contexto: 'A +Ativo é uma plataforma digital dedicada à promoção do bem-estar físico e mental da população sénior, através de desafios diários, jogos interativos e conteúdos educativos. Desenvolvida como resposta ao crescente problema de solidão entre os idosos na Europa, visa estimular a mente, fortalecer o corpo e promover conexões significativas entre gerações.',
+        features: [
+            {
+                titulo: 'A Minha Cozinha',
+                descricao: 'Experiência interativa com o Activi — uma raspadinha digital com receita surpresa diária — e um livro de receitas passo a passo com animações e sons, ideal para partilhar com familiares.',
+                icon: 'CookingPot',
+            },
+            {
+                titulo: 'As Minhas Memórias',
+                descricao: 'Linha do tempo interativa em forma de rolo fotográfico onde o utilizador guarda memórias com fotografias e histórias em áudio ou texto, revisitando momentos importantes da vida.',
+                icon: 'Images',
+            },
+            {
+                titulo: 'Secção +Ativo',
+                descricao: 'Espaço dedicado ao corpo e à mente com duas portas: um jardim com desafios físicos diários para combater o sedentarismo, e um ateliê criativo para desenhar livremente.',
+                icon: 'HeartPulse',
+            },
+            {
+                titulo: 'Activi',
+                descricao: 'Elemento transversal a todas as secções que propõe desafios individuais e comunitários diários, incentivando a socialização real e os laços entre gerações.',
+                icon: 'Sparkle',
+            },
+        ],
+        capa: '/src/assets/mockups/maisativo/ativo-capa.png',
+        mockups: [
+            '/src/assets/mockups/maisativo/ativo-cozinha.png',
+            '/src/assets/mockups/maisativo/ativo-memorias.png',
+            '/src/assets/mockups/maisativo/ativo-portas.png',
+            '/src/assets/mockups/maisativo/ativo-raspadinha.png',
+        ],
     },
     {
         id: 'myvito',
@@ -30,27 +73,27 @@ export const projetos = [
             {
                 titulo: 'Chatbot com IA',
                 descricao: 'Esclarece dúvidas, recebe recomendações e resolve problemas técnicos de forma rápida e eficiente, sem necessidade de aguardar atendimento humano.',
-                emoji: '🤖',
+                icon: 'BotMessageSquare',
             },
             {
                 titulo: 'Assistência Técnica',
                 descricao: 'Contacto direto com o serviço de assistência e agendamento imediato de reparações, garantindo apoio ao utilizador em qualquer momento.',
-                emoji: '🔧',
+                icon: 'Wrench',
             },
             {
                 titulo: 'Check-in / Check-out',
                 descricao: 'Sistema que regista automaticamente quando uma ferramenta é usada ou devolvida por um membro da equipa, facilitando a rastreabilidade em contexto profissional.',
-                emoji: '📋',
+                icon: 'Clipboard',
             },
             {
                 titulo: 'Diagnóstico IoT',
                 descricao: 'Integração com tecnologia IoT para diagnósticos automáticos das ferramentas, identificando falhas e necessidades de manutenção em tempo real.',
-                emoji: '📡',
+                icon: 'WifiHigh',
             },
             {
                 titulo: 'Localização de Ferramentas',
                 descricao: 'Localiza rapidamente ferramentas perdidas, especialmente útil para equipas em obra ou empresas com grande volume de equipamentos.',
-                emoji: '📍',
+                icon: 'MapPin',
             },
         ],
         capa: '/src/assets/mockups/myvito/myvito-ecras.png',
@@ -68,6 +111,44 @@ export const projetos = [
         descricao: 'Prototipagem de dois websites e uma app mobile de suporte a um evento desportivo.',
         tecnologias: ['figma'],
         icone: '/src/assets/folders/folder-evento.png',
+        cores: {
+            primary: '#4F6F52',
+            secondary: '#D8EEDD',
+            text: '#D8EEDD',
+            textLight: '#D8EEDD',
+            bg: '#1a2e1b',
+        },
+        hero: {
+            frase: 'Três dias. Três modalidades. Um desafio.',
+            sub: 'Sistemas de Comunicação Multimédia · 2023/24',
+            equipa: 'Raquel Neves, Núria Pereira e Sara Pombo',
+            logo: '/src/assets/logos/evento.png',
+            logoStyle: { width: '40%', height: 'auto', right: '0%', top: '70%' },
+        },
+        contexto: 'Mountain Challenge é um evento desportivo fictício pensado para decorrer no Parque Nacional Torres del Paine, no Chile. A prova decorre ao longo de três dias e inclui três modalidades — ciclismo, corrida e canoagem — desafiando não só os atletas como também a infraestrutura necessária para a sua cobertura e acompanhamento. Foram prototipados em Figma dois websites e uma aplicação mobile para suportar o evento.',
+        features: [
+            {
+                titulo: 'Website de Promoção',
+                descricao: 'Plataforma principal do evento Mountain Challenge, criada para atrair atletas, público e patrocinadores. Apresenta datas, percurso, modalidades, regulamento e informações sobre o Parque Nacional Torres del Paine.',
+                icon: 'Globe',
+            },
+            {
+                titulo: 'Website do Evento',
+                descricao: 'Plataforma de acompanhamento em tempo real durante os três dias de prova. Oferece atualizações instantâneas de resultados, mapas interativos dos percursos e conteúdos multimédia como fotos, vídeos e entrevistas.',
+                icon: 'MonitorPlay',
+            },
+            {
+                titulo: 'Aplicação Mobile',
+                descricao: 'Extensão mobile do website de acompanhamento. Notificações push, resultados imediatos, possibilidade de seguir atletas favoritos e interagir com a comunidade do evento — em qualquer lugar.',
+                icon: 'Smartphone',
+            },
+        ],
+        capa: '/src/assets/mockups/evento/evento-capa.png',
+        mockups: [
+            '/src/assets/mockups/evento/evento-sitepromocional.png',
+            '/src/assets/mockups/evento/evento-website.png',
+            '/src/assets/mockups/evento/evento-devices.png',
+        ],
     },
     {
         id: 'ecoscan',
@@ -75,13 +156,112 @@ export const projetos = [
         descricao: 'App mobile focada no consumo consciente, que permite consultar a sustentabilidade de produtos.',
         tecnologias: ['figma', 'html', 'css', 'php'],
         icone: '/src/assets/folders/folder-ecoscan.png',
+        cores: {
+            primary: '#4F6F52',
+            secondary: '#98ae80',
+            text: '#000000',
+            textLight: '#000000',
+            bg: '#efefef',
+        },
+        hero: {
+            frase: 'Consome melhor. Vive melhor.',
+            sub: 'Projeto CBL · 2023/24',
+            equipa: 'Raquel Neves, Leandro Oliveira, Maria Lourenço, Ivo Marcelino e Miguel Campos',
+            logo: '/src/assets/logos/ecoscan.svg',
+            logoStyle: { width: 'auto', height: '90%', right: '-5%', bottom: '0' },
+        },
+        contexto: 'EcoScan é uma aplicação mobile focada no consumo consciente e na sustentabilidade, prototipada em Figma e desenvolvida com HTML, CSS e PHP. Permite aos utilizadores consultar o nível de sustentabilidade de produtos à venda em hipermercados, ajudando a fazer escolhas mais informadas e ecológicas. Integra mercados da região de Ílhavo, promovendo a economia circular, e inclui um sistema de pontos trocáveis por descontos em espaços culturais da região.',
+        features: [
+            {
+                titulo: 'Consulta de Sustentabilidade',
+                descricao: 'Verifica o nível de sustentabilidade de produtos via pesquisa direta ou scan do código de barras, com classificação baseada em origem, embalagem, transporte e impacto ambiental.',
+                icon: 'Barcode',
+            },
+            {
+                titulo: 'Listas de Compras',
+                descricao: 'Cria e gere listas de compras personalizadas diretamente na aplicação, facilitando a organização e promovendo escolhas mais conscientes.',
+                icon: 'ListChecks',
+            },
+            {
+                titulo: 'Localização de Lojas',
+                descricao: 'Mapa com hipermercados e mercados locais da região, com destaque para estabelecimentos aderentes ao sistema de sustentabilidade da app, distância e localização exata.',
+                icon: 'MapPin',
+            },
+            {
+                titulo: 'Gamificação e Badges',
+                descricao: 'Sistema de emblemas atribuídos por ações sustentáveis — cada scan, compra sustentável ou visita a mercados locais gera recompensas visuais que marcam o progresso.',
+                icon: 'Trophy',
+            },
+            {
+                titulo: 'Sistema de Pontos',
+                descricao: 'Compras com produtos sustentáveis geram pontos trocáveis por descontos em espaços culturais de Ílhavo, como o Museu Marítimo ou o Museu do Bacalhau.',
+                icon: 'Star',
+            },
+        ],
+        capa: '/src/assets/mockups/ecoscan/ecoscan-capa.png',
+        mockups: [
+            '/src/assets/mockups/ecoscan/ecoscan-nivel.png',
+            '/src/assets/mockups/ecoscan/ecoscan-lista.png',
+            '/src/assets/mockups/ecoscan/ecoscan-lojas.png',
+            '/src/assets/mockups/ecoscan/ecoscan-badges.png',
+            '/src/assets/mockups/ecoscan/ecoscan-pontos.png',
+        ],
     },
     {
         id: 'teareaders',
         nome: 'TeaReaders',
         descricao: 'Plataforma digital para criar uma comunidade envolvente entre leitores.',
-        tecnologias: ['figma'],
+        tecnologias: ['figma', 'html', 'css', 'bootstrap'],
         icone: '/src/assets/folders/folder-teareaders.png',
+        cores: {
+            primary: '#905B3B',
+            secondary: '#E7DDD3',
+            text: '#2C2B2B',
+            textLight: '#2C2B2B',
+            bg: '#E7DDD3',
+        },
+        hero: {
+            frase: 'Lê mais. Sente mais. Partilha mais.',
+            sub: 'Laboratório Multimédia 2 · 2022/23',
+            equipa: 'Raquel Neves, Núria Pereira e Sara Pombo',
+            logo: '/src/assets/logos/teareaders.svg',
+        },
+        contexto: 'TeaReaders é uma plataforma digital concebida para criar uma comunidade envolvente entre leitores que não dispensam de uma chávena de chá. Propõe uma experiência imersiva que vai além do ato de ler, valorizando o ambiente, os aromas e os sabores que acompanham a leitura. Um espaço de partilha e descoberta onde utilizadores exploram sugestões de livros, encontram pares com gostos semelhantes e associam infusões a géneros literários.',
+        features: [
+            {
+                titulo: 'Avaliação com Sabores de Chá',
+                descricao: 'Em vez de estrelas, os utilizadores avaliam livros com sabores de chás e infusões, cada um com significado simbólico — conforto, energia ou introspeção.',
+                icon: 'Coffee',
+            },
+            {
+                titulo: 'Pesquisa por Paisagens Literárias',
+                descricao: 'Pesquisa de livros com base nos locais onde a narrativa decorre, filtrando por país, cidade ou local específico para uma descoberta literária geográfica.',
+                icon: 'Map',
+            },
+            {
+                titulo: '"Matchas"',
+                descricao: 'Encontra utilizadores com gostos literários semelhantes — os "matchas" — gerados com base nas leituras, avaliações e partilhas feitas na plataforma.',
+                icon: 'UsersRound',
+            },
+            {
+                titulo: 'Comentários e Partilhas',
+                descricao: 'Comenta livros, partilha leituras em curso e interage com a comunidade. As interações podem ser avaliadas com "saquetas de chá", o sistema de likes da plataforma.',
+                icon: 'MessagesSquare',
+            },
+            {
+                titulo: 'Universo do Chá',
+                descricao: 'Conteúdos informativos sobre os diferentes tipos de chá, os seus significados, efeitos e curiosidades, reforçando a ligação entre leitura e este universo sensorial.',
+                icon: 'BookOpen',
+            },
+        ],
+        capa: '/src/assets/mockups/teareaders/teareaders-capa.png',
+        mockups: [
+            '/src/assets/mockups/teareaders/teareaders-avaliacao.png',
+            '/src/assets/mockups/teareaders/teareaders-paisagens.png',
+            '/src/assets/mockups/teareaders/teareaders-matcha.png',
+            '/src/assets/mockups/teareaders/teareaders-comunidade.png',
+            '/src/assets/mockups/teareaders/teareaders-info.png',
+        ],
     },
     {
         id: 'mutemind',
@@ -89,6 +269,50 @@ export const projetos = [
         descricao: 'App mobile para promover o bem-estar psicológico com ferramentas de autocuidado.',
         tecnologias: ['figma', 'html', 'css', 'bootstrap'],
         icone: '/src/assets/folders/folder-mutemind.png',
+        cores: {
+            primary: '#98A076',
+            secondary: '#F6F2EA',
+            text: '#2C2B2B',
+            textLight: '#2C2B2B',
+            bg: '#F6F2EA',
+        },
+        hero: {
+            frase: 'O teu espaço de autocuidado, num só lugar.',
+            sub: 'Laboratório Multimédia 2 · 2022/23',
+            equipa: 'Raquel Neves, Núria Pereira e Sara Pombo',
+            logo: '/src/assets/logos/mutemind.png',
+            logoStyle: { width: 'auto', height: '90%', right: '-5%', bottom: '50%' }
+        },
+        contexto: 'muteMIND é uma web app desenvolvida para promover o bem-estar psicológico dos utilizadores, integrando várias ferramentas de autocuidado num único espaço digital. Reúne práticas essenciais para a saúde mental — journaling, meditação, yoga e receitas saudáveis — numa abordagem estética, organizada e funcional. Destaca-se por unificar funcionalidades que normalmente exigiriam várias apps distintas.',
+        features: [
+            {
+                titulo: 'Receitas Saudáveis',
+                descricao: 'Catálogo de receitas saudáveis com instruções detalhadas, imagens e vídeos. Pratos equilibrados para manter uma alimentação consciente e promover o bem-estar físico e mental.',
+                icon: 'Utensils',
+            },
+            {
+                titulo: 'Filtros de Receitas',
+                descricao: 'Filtros personalizados por tipo de dieta, tempo de preparação, ingredientes disponíveis ou objetivos de saúde, tornando a pesquisa mais prática e ajustada.',
+                icon: 'Funnel',
+            },
+            {
+                titulo: 'Yoga com Vídeos Guiados',
+                descricao: 'Treinos de yoga em formato vídeo, do nível iniciante ao avançado, para promover o equilíbrio entre corpo e mente, flexibilidade e redução do stress.',
+                icon: 'Brain',
+            },
+            {
+                titulo: 'Diário de Gratidão',
+                descricao: 'Diário para registar diariamente motivos de gratidão e reflexões pessoais, cultivando uma mentalidade positiva, resiliência emocional e autoconhecimento.',
+                icon: 'NotebookPen',
+            },
+        ],
+        capa: '/src/assets/mockups/mutemind/mutemind-capa.png',
+        mockups: [
+            '/src/assets/mockups/mutemind/mutemind-receitas.png',
+            '/src/assets/mockups/mutemind/mutemind-filtros.png',
+            '/src/assets/mockups/mutemind/mutemind-yoga.png',
+            '/src/assets/mockups/mutemind/mutemind-journal.png',
+        ],
     },
     {
         id: 'symbia',
@@ -96,6 +320,42 @@ export const projetos = [
         descricao: 'Ferramenta de analytics para sala de aula construída com React e Firebase.',
         tecnologias: ['figma', 'reactjs', 'firestore', 'tailwind'],
         icone: '/src/assets/folders/folder-symbia.png',
+        cores: {
+            primary: '#ffffff',
+            secondary: '#2125AC',
+            text: '#ffffff',
+            textLight: '#ffffff',
+            bg: '#0DADD6',
+        },
+        hero: {
+            frase: 'Dados que transformam a sala de aula.',
+            sub: 'Projeto Académico · 2024/25',
+            logo: '/src/assets/logos/symbia.svg',
+        },
+        contexto: 'Symbia é uma plataforma desenvolvida para apoiar os docentes na gestão e reflexão sobre o processo de ensino, antes, durante e após a aula. Construída com React, Vite, Firebase e Tailwind, a aplicação centraliza informações, recolhe dados por sensores e gera resumos inteligentes para apoiar a tomada de decisão pedagógica.',
+        features: [
+            {
+                titulo: 'Centralização de Informações',
+                descricao: 'Toda a informação relevante sobre as aulas, turmas e alunos num único espaço, facilitando o acesso e a gestão do docente antes, durante e após a aula.',
+                icon: 'Database',
+            },
+            {
+                titulo: 'Dados de Sensores',
+                descricao: 'Recolha automática de dados ambientais e de presença através de sensores integrados, fornecendo contexto adicional para a análise do ambiente de aprendizagem.',
+                icon: 'Cpu',
+            },
+            {
+                titulo: 'Resumo Inteligente',
+                descricao: 'Geração automática de resumos e insights sobre cada aula, apoiando a reflexão pedagógica e a melhoria contínua da prática docente.',
+                icon: 'ChartArea',
+            },
+        ],
+        capa: '/src/assets/mockups/symbia/symbia-capa.png',
+        mockups: [
+            '/src/assets/mockups/symbia/symbia-centralizacao.png',
+            '/src/assets/mockups/symbia/symbia-sensores.png',
+            '/src/assets/mockups/symbia/symbia-relatorios.png',
+        ],
     },
 ]
 
