@@ -1,0 +1,130 @@
+.page {
+    background-color: var(--pink);
+    min-height: 100vh;
+}
+
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 6rem;
+    padding: 8rem;
+    align-items: center;
+}
+
+/* ESQUERDA */
+.hello {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--red);
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    font-size: clamp(4rem, 7vw, 10rem);
+    font-weight: 900;
+    color: var(--black);
+    line-height: 0.9;
+    margin-bottom: 3rem;
+}
+
+.frase {
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    font-weight: 300;
+    color: var(--black);
+    line-height: 1.7;
+    max-width: 420px;
+    opacity: 0.7;
+}
+
+/* DIREITA */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid rgba(44, 43, 43, 0.15);
+    text-decoration: none;
+    color: var(--black);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contactLink:first-child {
+    border-top: 1px solid rgba(44, 43, 43, 0.15);
+}
+
+.contactLink:hover {
+    transform: translateX(8px);
+    color: var(--red);
+}
+
+.contactLink:hover .icon {
+    color: var(--red);
+}
+
+.linkLeft {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.icon {
+    color: var(--black);
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.linkText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.emailLink .value {
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    font-weight: 400;
+}
+
+.value {
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    font-weight: 400;
+}
+
+.copyBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.70rem;
+    font-weight: 400;
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 100px;
+    padding: 0.3rem 0.8rem;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+    font-family: var(--font);
+}
+
+.copyBtn:hover {
+    background: var(--red);
+    color: white;
+}
