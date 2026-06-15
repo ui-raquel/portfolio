@@ -36,11 +36,11 @@ function Hero() {
         duration: 1,
         ease: 'none',
       })
-      .to(bgRef.current, {
-        backgroundColor: '#FDD3CF',
-        duration: 0.4,
-        ease: 'power2.inOut',
-      }, '>-0.1')
+        .to(bgRef.current, {
+          backgroundColor: '#FDD3CF',
+          duration: 0.4,
+          ease: 'power2.inOut',
+        }, '>-0.1')
     })
 
     window.addEventListener('load', () => ScrollTrigger.refresh())
@@ -90,7 +90,7 @@ function Hero() {
         preserveAspectRatio="none"
       >
         <path
-          d="M0,120 C360,0 1080,0 1440,120 L1440,120 L0,120 Z"
+          d="M0,50 C790,150 200,0 1840,90 L1440,120 L0,120 Z"
           fill="#FDD3CF"
         />
       </svg>
