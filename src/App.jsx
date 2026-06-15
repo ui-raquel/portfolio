@@ -12,6 +12,7 @@ import ProjectDetail from './pages/ProjectDetail/ProjectDetail'
 function Layout() {
   const location = useLocation()
   const hideNav = location.pathname.startsWith('/projects')
+  const hideFooter = location.pathname === '/projects'
 
   return (
     <>
@@ -24,8 +25,7 @@ function Layout() {
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {!hideNav && <Footer />}
-    </>
+      {!hideFooter && <Footer />}    </>
   )
 }
 
