@@ -39,13 +39,13 @@ function Navbar() {
 
       <ul className={styles.links}>
         <li>
-          <Link to="/about" className={styles.link}>
-            quem sou
+          <Link to="/projects" className={styles.link}>
+            projetos
           </Link>
         </li>
         <li>
-          <Link to="/projects" className={styles.link}>
-            projetos
+          <Link to="/about" className={styles.link}>
+            quem sou
           </Link>
         </li>
         <li>
