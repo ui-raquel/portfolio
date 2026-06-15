@@ -25,3 +25,7 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+
+h1 {
+  color: var(--red);
+}

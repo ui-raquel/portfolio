@@ -17,19 +17,25 @@
 .heroHello {
     font-size: 1rem;
     font-weight: 300;
-    color: var(--red);
+    color: var(--black);
     letter-spacing: 0.1em;
     text-transform: lowercase;
     margin-bottom: 1rem;
 }
 
 .heroNome {
-    font-size: clamp(5rem, 12vw, 12rem);
-    font-weight: 900;
-    color: var(--black);
-    line-height: 0.9;
-    margin-bottom: 3rem;
+  font-size: clamp(5rem, 12vw, 12rem);
+  font-weight: 900;
+  color: var(--black);
+  line-height: 0.9;
+  margin-bottom: 3rem;
+  transition: color 0.4s ease;
+  cursor: default;
 }
+
+/* .heroNome:hover {
+  color: var(--red);
+} */
 
 .heroNome span {
     color: var(--red);
@@ -58,16 +64,37 @@
     user-select: none;
 } */
 
+.heroMockupWrapper {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
 .heroMockup {
-  position: absolute;
-  right: 2rem;
-  top: 20%;
-  transform: translateY(-50%);
-  width: 40%;
-  height: auto;
-  object-fit: contain;
-  pointer-events: none;
-  user-select: none;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    display: block;
+}
+
+.heroMockupColor {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    user-select: none;
+}
+
+.heroMockupWrapper:hover .heroMockupColor {
+    opacity: 1;
 }
 
 /* SOBRE */

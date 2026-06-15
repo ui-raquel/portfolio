@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import styles from './About.module.css'
 
@@ -67,6 +67,18 @@ const timeline = [
 ]
 
 function About() {
+  const h1Ref = useRef(null)
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
+  const [hovering, setHovering] = useState(false)
+
+  const handleMouseMove = (e) => {
+    const rect = h1Ref.current.getBoundingClientRect()
+    setMousePos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    })
+  }
+
   return (
     <div className={styles.page}>
 
@@ -81,15 +93,26 @@ function About() {
         >
           olá, sou a
         </motion.span>
-        <motion.h1
+
+        <h1
+          ref={h1Ref}
           className={styles.heroNome}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          custom={0.2}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() => setHovering(true)}
+          onMouseLeave={() => setHovering(false)}
+          style={{
+            backgroundImage: hovering
+              ? `radial-gradient(circle 150px at ${mousePos.x}px ${mousePos.y}px, var(--red) 50%, var(--black) 50%)`
+              : 'none',
+            WebkitBackgroundClip: hovering ? 'text' : 'unset',
+            WebkitTextFillColor: hovering ? 'transparent' : 'var(--black)',
+            backgroundClip: hovering ? 'text' : 'unset',
+            color: hovering ? 'transparent' : 'var(--black)',
+          }}
         >
           Raquel<br />Neves
-        </motion.h1>
+        </h1>
+
         <motion.p
           className={styles.heroFrase}
           variants={fadeUp}
@@ -100,17 +123,19 @@ function About() {
           apaixonada por design UI/UX que une criatividade, empatia e propósito para criar um mundo digital mais inclusivo e acessível.
         </motion.p>
 
-        <motion.img
-          src="/src/assets/foto-raquel.png"
-          alt="Raquel Neves"
-          className={styles.heroMockup}
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          custom={0.4}
-        />
+        <div className={styles.heroMockupWrapper}>
+          <img
+            src="/src/assets/foto-raquel.png"
+            alt="Raquel Neves"
+            className={styles.heroMockup}
+          />
+          <img
+            src="/src/assets/foto-raquel-cores.png"
+            alt="Raquel Neves a cores"
+            className={styles.heroMockupColor}
+          />
+        </div>
       </section>
-
 
       {/* SOBRE */}
       <section className={styles.sobre}>

@@ -8,23 +8,24 @@ function Navbar() {
   const location = useLocation()
 
   useEffect(() => {
+    if (location.pathname !== '/') {
+      setScrolled(true)
+      setOnHero(false)
+      return
+    }
+
     const handleScroll = () => {
       const heroHeight = window.innerHeight * 2
       setScrolled(window.scrollY > 50)
       setOnHero(window.scrollY < heroHeight)
     }
 
+    // reset ao entrar na homepage
+    handleScroll()
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
-  useEffect(() => {
-    if (location.pathname !== '/') {
-      setOnHero(false)
-    } else {
-      setOnHero(window.scrollY < window.innerHeight * 0.8)
-    }
-  }, [location])
+  }, [location.pathname])
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} ${onHero ? styles.onHero : styles.offHero}`}>
