@@ -1,0 +1,209 @@
+.page {
+    background-color: var(--pink);
+    min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroHello {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--red);
+    letter-spacing: 0.1em;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+}
+
+.heroNome {
+    font-size: clamp(5rem, 12vw, 12rem);
+    font-weight: 900;
+    color: var(--black);
+    line-height: 0.9;
+    margin-bottom: 3rem;
+}
+
+.heroNome span {
+    color: var(--red);
+}
+
+.heroFrase {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-weight: 300;
+    color: var(--black);
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* .heroFoto {
+    position: absolute;
+    right: 6rem;
+    bottom: 0;
+    height: 85%;
+    width: auto;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0.35;
+    mask-image: linear-gradient(to top, transparent 0%, black 30%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 30%);
+    pointer-events: none;
+    user-select: none;
+} */
+
+.heroMockup {
+  position: absolute;
+  right: 2rem;
+  top: 20%;
+  transform: translateY(-50%);
+  width: 40%;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* SOBRE */
+.sobre {
+    padding: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    border-top: 1px solid rgba(211, 0, 0, 0.15);
+}
+
+.sobreBloco {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sectionTitle {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 0.5rem;
+}
+
+.text {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--black);
+    line-height: 1.8;
+}
+
+/* TIMELINE */
+.timeline {
+    padding: 8rem;
+    border-top: 1px solid rgba(211, 0, 0, 0.15);
+}
+
+.timelineIntro {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--black);
+    line-height: 1.8;
+    max-width: 700px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    opacity: 0.7;
+}
+
+.timelineList {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.timelineItem {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.timelineAno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: sticky;
+    top: 6rem;
+}
+
+.timelineAno span {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 900;
+    color: var(--red);
+    line-height: 1;
+}
+
+.timelineLine {
+    width: 2px;
+    height: 60px;
+    background-color: var(--red);
+    opacity: 0.3;
+    border-radius: 1px;
+}
+
+.timelineContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--red);
+    border: 1px solid var(--red);
+    border-radius: 100px;
+    padding: 0.3rem 0.8rem;
+    opacity: 0.7;
+}
+
+.timelineItemFuturo {
+    opacity: 0.5;
+}
+
+.timelineItemFuturo .timelineAno span {
+    color: var(--black);
+}
+
+.timelineItemFuturo .timelineLine {
+    border-left: 2px dashed var(--black);
+    background: none;
+    width: 0;
+}
+
+.futuroBadge {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--black);
+    border: 1px dashed var(--black);
+    border-radius: 100px;
+    padding: 0.2rem 0.6rem;
+    opacity: 0.5;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+}
+
+.tagFuturo {
+    border-style: dashed;
+    color: var(--black);
+    border-color: var(--black);
+}

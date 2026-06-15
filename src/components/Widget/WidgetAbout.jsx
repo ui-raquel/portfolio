@@ -5,35 +5,28 @@ import styles from './Widget.module.css'
 function WidgetAbout() {
   const [visible, setVisible] = useState(true)
 
+
   return (
     <AnimatePresence>
       {visible && (
         <motion.div
-          data-draggable="true"
-          drag
-          dragMomentum={false}
-          whileDrag={{ scale: 1.02, zIndex: 300 }}
-          className={styles.alertBox}
-          initial={{ opacity: 0, scale: 0.85 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.85 }}
-          transition={{ duration: 0.3, ease: 'easeOut' }}
+          className={styles.notification}
+          initial={{ opacity: 0, x: 120 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 120 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
         >
-          <div className={styles.alertHeader}>
-            <div className={styles.alertDots}>
-              <span className={styles.dot1} />
-              <span className={styles.dot2} />
-              <span className={styles.dot3} />
+          <div className={styles.notificationHeader}>
+            <div className={styles.notificationMeta}>
+              <span className={styles.notificationApp}>Notificação</span>
+              <span className={styles.notificationTime}>agora</span>
             </div>
-            <p className={styles.alertTitle}>nota.txt</p>
+            <button className={styles.notificationClose} onClick={() => setVisible(false)}>✕</button>
           </div>
-          <p className={styles.alertText}>
+          <p className={styles.notificationText}>
             Estes projetos são de contexto <span>académico</span>, de fases diferentes do meu percurso — é possível ver uma <span>evolução</span> clara.<br /><br />
             Portfólio em <span>constante atualização</span> ✦
           </p>
-          <button className={styles.alertBtn} onClick={() => setVisible(false)}>
-            OK
-          </button>
         </motion.div>
       )}
     </AnimatePresence>
