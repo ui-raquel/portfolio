@@ -2,6 +2,11 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { projetos } from '../../data/projetos'
 import styles from './ProjectDetail.module.css'
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -19,6 +24,25 @@ function ProjectDetail() {
     if (!projeto) return <div>Projeto não encontrado.</div>
 
     const { cores, hero, contexto, features, mockups } = projeto
+
+    const capaRef = useRef(null)
+
+    useEffect(() => {
+        if (!capaRef.current) return
+
+        gsap.to(capaRef.current, {
+            yPercent: -20,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: capaRef.current,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true,
+            }
+        })
+
+        return () => ScrollTrigger.getAll().forEach(t => t.kill())
+    }, [])
 
     return (
         <div className={styles.page} style={{ '--p-primary': cores.primary, '--p-secondary': cores.secondary, '--p-bg': cores.bg, '--p-text': cores.text, '--p-textLight': cores.textLight }}>
@@ -103,19 +127,14 @@ function ProjectDetail() {
 
             {/* CAPA */}
             {projeto.capa && (
-                <motion.div
-                    className={styles.capa}
-                    variants={fadeUp}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                >
+                <div className={styles.capa}>
                     <img
+                        ref={capaRef}
                         src={projeto.capa}
                         alt={`${projeto.nome} capa`}
                         className={styles.capaImg}
                     />
-                </motion.div>
+                </div>
             )}
 
             {/* FEATURES */}
