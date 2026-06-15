@@ -6,7 +6,7 @@ function Footer() {
       <p>
         &copy; {new Date().getFullYear()} Raquel Neves. Todos os direitos reservados.
       </p>
-      <p>Vamos conectar-nos! | <a href="/contact">Contacto</a></p>
+      <p>Vamos conectar-nos! | <a href="/contact" className={styles.link}>Contacto</a></p>
     </footer>
   )
 }

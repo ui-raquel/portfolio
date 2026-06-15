@@ -7,6 +7,7 @@ import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import ProjectDetail from './pages/ProjectDetail/ProjectDetail'
+// import ScrollToTop from './components/ScrollToTop'
 
 
 function Layout() {
@@ -32,6 +33,7 @@ function Layout() {
 function App() {
   return (
     <BrowserRouter>
+      {/* <ScrollToTop /> */}
       <Layout />
     </BrowserRouter>
   )
