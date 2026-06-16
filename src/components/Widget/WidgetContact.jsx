@@ -14,7 +14,7 @@ function WidgetContact() {
             transition={{ duration: 0.5, delay: 0.4 }}
         >
             <img
-                src="/../public/assets/files/phone.webp" alt="contactos" className={styles.contactImg} 
+                src="/assets/files/phone.webp" alt="contactos" className={styles.contactImg} 
                 alt="contactos"
                 className={styles.contactImg}
             />

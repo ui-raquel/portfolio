@@ -77,7 +77,7 @@ function Hero() {
       <div className={styles.content}>
         <img
           className={styles.rnLogo}
-          src="/../public/assets/rn.svg"
+          src="/assets/rn.svg"
           alt="Logo RN"
         />
         <h1 className={styles.name}>raquel<br />neves</h1>
