@@ -31,7 +31,7 @@ function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} ${onHero ? styles.onHero : styles.offHero}`}>
       <Link to="/" className={styles.logo}>
         <img
-          src="/src/assets/rn.svg"
+          src="../public/assets/rn.svg"
           alt="Raquel Neves"
           className={styles.logoImg}
         />

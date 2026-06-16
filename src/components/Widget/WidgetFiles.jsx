@@ -14,7 +14,7 @@ function WidgetFiles() {
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.5, delay: 0.6 }}
 >
-  <img src="/src/assets/files/photo-booth.webp" alt="quem sou" className={styles.fileImg} />
+  <img src="/../public/assets/files/photo-booth.webp" alt="quem sou" className={styles.fileImg} />
   <span className={styles.fileName}>Quem Sou</span>
 </motion.div>
 
@@ -25,7 +25,7 @@ function WidgetFiles() {
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.5, delay: 0.7 }}
 >
-  <img src="/src/assets/files/phone.webp" alt="contactos" className={styles.fileImg} />
+  <img src="/../public/assets/files/phone.webp" alt="contactos" className={styles.fileImg} />
   <span className={styles.fileName}>Contactos</span>
 </motion.div>
     </>

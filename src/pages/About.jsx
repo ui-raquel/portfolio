@@ -125,12 +125,12 @@ function About() {
 
         <div className={styles.heroMockupWrapper}>
           <img
-            src="/src/assets/foto-raquel.png"
+            src="/../public/assets/foto-raquel.png"
             alt="Raquel Neves"
             className={styles.heroMockup}
           />
           <img
-            src="/src/assets/foto-raquel-cores.png"
+            src="/../public/assets/foto-raquel-cores.png"
             alt="Raquel Neves a cores"
             className={styles.heroMockupColor}
           />
