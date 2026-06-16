@@ -53,3 +53,30 @@
   z-index: 3;
 
 }
+
+/* responsive */
+@media (max-width: 768px) {
+  .spiral {
+    width: 16rem;
+    left: -40px;
+    top: -20px;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .rnLogo {
+    width: 10rem;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .curve {
+    display: none;
+  }
+}

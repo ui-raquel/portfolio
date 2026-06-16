@@ -128,3 +128,35 @@
     background: var(--red);
     color: white;
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.5rem 4rem;
+    gap: 3rem;
+    min-height: unset;
+  }
+
+  .titulo {
+    font-size: clamp(3rem, 15vw, 5rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .frase {
+    max-width: 100%;
+  }
+
+  .contactLink {
+    padding: 1.2rem 0;
+  }
+
+  .value {
+    font-size: 0.85rem;
+  }
+
+  .emailLink .value {
+    font-size: 0.85rem;
+  }
+}
