@@ -22,3 +22,14 @@
 .link:hover {
   color: var(--red-hover);
 }
+
+/* responsive*/
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+  }
+}

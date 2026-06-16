@@ -80,3 +80,26 @@
   width: 100%;
 }
 
+/* responsive */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .scrolled {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .logoImg {
+    width: 2rem;
+  }
+
+  .links {
+    gap: 1.5rem;
+  }
+
+  .link {
+    font-size: 0.8rem;
+  }
+}

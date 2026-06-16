@@ -100,3 +100,14 @@
   color: var(--red);
   font-weight: 600;
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .stickyNote,
+  .fileIcon,
+  .contactIcon,
+  .notification {
+    display: none;
+  }
+}

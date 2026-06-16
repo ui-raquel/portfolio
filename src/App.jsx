@@ -11,8 +11,9 @@ import ProjectDetail from './pages/ProjectDetail/ProjectDetail'
 
 
 function Layout() {
+  const isMobile = window.innerWidth <= 768
   const location = useLocation()
-  const hideNav = location.pathname.startsWith('/projects')
+  const hideNav = isMobile ? false : location.pathname.startsWith('/projects')
   const hideFooter = location.pathname === '/projects'
 
   return (

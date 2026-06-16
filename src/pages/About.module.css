@@ -234,3 +234,82 @@
     color: var(--black);
     border-color: var(--black);
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+  /* HERO */
+  .hero {
+    padding: 6rem 1.5rem 3rem;
+    min-height: 100vh;
+  }
+
+  .heroNome {
+    font-size: clamp(3.5rem, 18vw, 6rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .heroFrase {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .heroMockupWrapper {
+    position: relative;
+    right: unset;
+    top: unset;
+    transform: none;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* SOBRE */
+  .sobre {
+    padding: 3rem 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  /* TIMELINE */
+  .timeline {
+    padding: 3rem 1.5rem;
+  }
+
+  .timelineIntro {
+    margin-bottom: 3rem;
+  }
+
+  .timelineList {
+    gap: 3rem;
+  }
+
+  .timelineItem {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .timelineAno {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .timelineAno span {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  .timelineLine {
+    height: 2px;
+    width: 40px;
+    flex-shrink: 0;
+  }
+
+  .timelineItemFuturo .timelineLine {
+    border-left: none;
+    border-top: 2px dashed var(--black);
+    background: none;
+    height: 0;
+    width: 40px;
+  }
+}

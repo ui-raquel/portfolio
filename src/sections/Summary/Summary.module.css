@@ -190,3 +190,67 @@
   z-index: 2;
   padding-top: 6rem;
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .quoteSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .quote {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+  }
+
+  .formacaoSection {
+    padding: 3rem 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skillsSection {
+    padding: 1rem 1.5rem 4rem;
+  }
+
+  .skillsContent {
+    padding-top: 3rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .skillsGrupos {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .bigTitle {
+    font-size: clamp(2rem, 20vw, 4rem);
+    left: 1rem;
+  }
+
+  .projetosSection {
+    padding: 3rem 1.5rem 5rem;
+  }
+
+  .projetosContent {
+    padding-top: 3rem;
+  }
+
+  .bigTitleRight {
+    font-size: clamp(2rem, 20vw, 4rem);
+    right: 1rem;
+  }
+
+  .projetosGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .projetoLink {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .projetoDescricao {
+    display: none;
+  }
+}

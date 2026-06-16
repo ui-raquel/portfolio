@@ -11,12 +11,11 @@ import WidgetFiles from '../components/Widget/WidgetFiles'
 
 const DEFAULT_TEXTO = 'passa o cursor numa pasta para saberes mais sobre cada projeto :)'
 
-
-
 function Projects() {
   const [techAtiva, setTechAtiva] = useState(null)
   const [postitTexto, setPostitTexto] = useState(DEFAULT_TEXTO)
   const navigate = useNavigate()
+  const isMobile = window.innerWidth <= 768
 
   const now = new Date()
   const hora = now.toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' })
@@ -24,13 +23,15 @@ function Projects() {
   return (
     <div className={styles.desktop}>
 
-      <div className={styles.menuBar}>
-        <div className={styles.menuLeft}>
-          <button className={styles.backBtn} onClick={() => navigate('/')}>←</button>
-          <span className={styles.menuNome}>Raquel Neves</span>
+      {!isMobile && (
+        <div className={styles.menuBar}>
+          <div className={styles.menuLeft}>
+            <button className={styles.backBtn} onClick={() => navigate('/')}>←</button>
+            <span className={styles.menuNome}>Raquel Neves</span>
+          </div>
+          <span className={styles.menuHora}>{hora}</span>
         </div>
-        <span className={styles.menuHora}>{hora}</span>
-      </div>
+      )}
 
       <motion.div
         className={styles.grid}
@@ -57,12 +58,11 @@ function Projects() {
         </AnimatePresence>
       </motion.div>
 
-      <WidgetAbout />
-      <WidgetFiles />
-      {/* <PostIt texto={postitTexto} />
-      <Dock ativa={techAtiva} onSelect={setTechAtiva} /> */}
-      <PostIt texto={postitTexto} />
-      <Dock ativa={techAtiva} onSelect={setTechAtiva} />
+      {!isMobile && <PostIt texto={postitTexto} />}
+      {!isMobile && <Dock ativa={techAtiva} onSelect={setTechAtiva} />}
+      {!isMobile && <WidgetAbout />}
+      {!isMobile && <WidgetFiles />}
+
     </div>
   )
 }
