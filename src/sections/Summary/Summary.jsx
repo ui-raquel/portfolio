@@ -3,17 +3,19 @@ import { Link } from 'react-router-dom'
 import { motion, useInView } from 'framer-motion'
 import styles from './Summary.module.css'
 import Navbar from '../../components/Navbar/Navbar'
+import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel'
 
 
-const projetos = {
-  default: "Os projetos apresentados foram desenvolvidos em contexto académico, no âmbito da licenciatura em Multimédia e Tecnologias da Comunicação. Cada trabalho reflete a aplicação prática de UX/UI design combinada com competências técnicas em front-end development.",
-  ativo: "Plataforma digital dedicada à promoção do bem-estar físico e mental da população sénior, através de desafios diários, jogos interativos e conteúdos educativos.",
-  vito: "Proposta de prototipagem desenvolvida em Figma, que visa reforçar a ligação entre a marca VITO TOOLS, os seus clientes B2B e os consumidores finais.",
-  evento: "Prototipagem em Figma de dois websites e uma aplicação mobile de suporte a um evento desportivo.",
-  eco: "Aplicação mobile focada no consumo consciente e na sustentabilidade, prototipada em Figma e desenvolvida com HTML, CSS e PHP.",
-  tea: "Plataforma digital concebida para criar uma comunidade envolvente entre leitores que não dispensam de uma chávena de chá.",
-  mutemind: "Conceito de aplicação mobile com o objetivo de promover o bem-estar psicológico dos utilizadores."
-}
+
+// const projetos = {
+//   default: "Os projetos apresentados foram desenvolvidos em contexto académico, no âmbito da licenciatura em Multimédia e Tecnologias da Comunicação. Cada trabalho reflete a aplicação prática de UX/UI design combinada com competências técnicas em front-end development.",
+//   ativo: "Plataforma digital dedicada à promoção do bem-estar físico e mental da população sénior, através de desafios diários, jogos interativos e conteúdos educativos.",
+//   vito: "Proposta de prototipagem desenvolvida em Figma, que visa reforçar a ligação entre a marca VITO TOOLS, os seus clientes B2B e os consumidores finais.",
+//   evento: "Prototipagem em Figma de dois websites e uma aplicação mobile de suporte a um evento desportivo.",
+//   eco: "Aplicação mobile focada no consumo consciente e na sustentabilidade, prototipada em Figma e desenvolvida com HTML, CSS e PHP.",
+//   tea: "Plataforma digital concebida para criar uma comunidade envolvente entre leitores que não dispensam de uma chávena de chá.",
+//   mutemind: "Conceito de aplicação mobile com o objetivo de promover o bem-estar psicológico dos utilizadores."
+// }
 
 const skills = {
   design: [
@@ -107,7 +109,7 @@ function Summary() {
       </div>
 
       <div className={styles.skillsSection}>
-                <span className={styles.bigTitle} aria-hidden="true">skills</span>
+        <span className={styles.bigTitle} aria-hidden="true">skills</span>
 
         <div className={styles.skillsContent}>
           <AnimatedBlock variant={fromLeft}>
@@ -142,45 +144,12 @@ function Summary() {
 
 
       <div className={styles.projetosSection}>
-        <span className={styles.bigTitleRight} aria-hidden="true">projetos</span>
+        <span className={styles.bigTitleRight} aria-hidden="true">destaque</span>
         <div className={styles.projetosContent}>
           <AnimatedBlock variant={fadeUp}>
             <h2 className={styles.sectionTitle}>Projetos</h2>
           </AnimatedBlock>
-          <div className={styles.projetosGrid}>
-            <AnimatedBlock variant={fromLeft} delay={0.1}>
-              <ul className={styles.projetosList}>
-                {Object.keys(projetos).filter(p => p !== 'default').map(p => (
-                  <li
-                    key={p}
-                    className={styles.projetoItem}
-                    onMouseEnter={() => setProjetoAtivo(p)}
-                    onMouseLeave={() => setProjetoAtivo('default')}
-                  >
-                    <Link to={`/projects/${p}`} className={styles.projetoLink}>
-                      {p === 'ativo' ? '+Ativo' :
-                        p === 'vito' ? 'My VITO' :
-                          p === 'evento' ? 'Evento Desportivo' :
-                            p === 'eco' ? 'EcoScan' :
-                              p === 'tea' ? 'TeaReaders' :
-                                'muteMIND'}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </AnimatedBlock>
-            <AnimatedBlock variant={fromRight} delay={0.2}>
-              <motion.p
-                key={projetoAtivo}
-                className={styles.projetoDescricao}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                {projetos[projetoAtivo]}
-              </motion.p>
-            </AnimatedBlock>
-          </div>
+          <ProjectCarousel />
         </div>
       </div>
 

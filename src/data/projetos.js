@@ -321,7 +321,7 @@ export const projetos = [
         tecnologias: ['figma', 'reactjs', 'firestore', 'tailwind'],
         icone: '/assets/folders/folder-symbia.png',
         cores: {
-            primary: '#ffffff',
+            primary: '#2125AC',
             secondary: '#2125AC',
             text: '#ffffff',
             textLight: '#ffffff',
