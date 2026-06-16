@@ -31,3 +31,9 @@ body {
 h1 {
   color: var(--red);
 }
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+}

@@ -49,3 +49,13 @@
   border-color: var(--red);
   opacity: 0.3;
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+  .cursor,
+  .follower,
+  .emoji {
+    display: none;
+  }
+}
