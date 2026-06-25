@@ -24,8 +24,8 @@ function WidgetAbout() {
             <button className={styles.notificationClose} onClick={() => setVisible(false)}>✕</button>
           </div>
           <p className={styles.notificationText}>
-            Estes projetos são de contexto <span>académico</span>, de fases diferentes do meu percurso — é possível ver uma <span>evolução</span> clara.<br /><br />
-            Portfólio em <span>constante atualização</span> ✦
+            Estes projetos foram elaborados ao longo do meu percurso académico, sendo que alguns foram desenvolvidos em grupo.<br /><br />
+            Em breve, pretendo adicionar mais projetos ao meu portfólio, incluindo projetos pessoais e trabalhos realizados em contexto profissional.
           </p>
         </motion.div>
       )}

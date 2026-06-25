@@ -61,7 +61,7 @@ const timeline = [
   {
     ano: '26/27',
     futuro: true,
-    texto: 'Conclusão do Mestrado em Comunicação e Tecnologias Web com projeto próprio. Um ano dedicado a explorar novas tecnologias como Flutter, Swift e Cloud Computing, alargando horizontes para o desenvolvimento móvel nativo e infraestruturas cloud.',
+    texto: 'Conclusão do Mestrado em Comunicação e Tecnologias Web com projeto próprio. Pretendo explorar novas tecnologias como Flutter, Swift e Cloud Computing, alargando horizontes para o desenvolvimento móvel nativo e infraestruturas cloud.',
     tags: ['Flutter', 'Swift', 'Cloud Computing', 'Projeto de Mestrado'],
   },
 ]
@@ -146,7 +146,7 @@ function About() {
               Formei-me em Multimédia e Tecnologias da Comunicação na Universidade de Aveiro, onde desenvolvi competências que vão desde o design gráfico até ao desenvolvimento front-end. Aprendi a importância de unir criatividade e funcionalidade para construir soluções que realmente façam sentido para os utilizadores.
             </p>
             <p className={styles.text}>
-              Para além das habilidades técnicas, valorizo o crescimento pessoal e o desenvolvimento constante de soft skills como a comunicação eficaz e o trabalho em equipa.
+              De momento, encontro-me a concluir o Mestrado em Comunicação e Tecnologias Web, onde aprofundei conhecimentos em design de interfaces, desenvolvimento web avançado e acessibilidade digital.
             </p>
           </div>
         </AnimatedBlock>
@@ -157,7 +157,7 @@ function About() {
               Acredito no poder do design para tornar o mundo digital mais humano e acessível. O que me move é a convicção de que a tecnologia e o design devem ser acessíveis, humanos e conscientes.
             </p>
             <p className={styles.text}>
-              Gosto especialmente de me envolver em projetos que valorizem a diversidade, a sustentabilidade, o bem-estar psicológico e físico e a inovação social. O meu grande objetivo é unir a minha criatividade e os meus conhecimentos a uma missão maior, contribuindo para um mundo mais justo, empático e conectado.
+              Gosto especialmente de projetos que valorizem o bem-estar a inovação social. O meu grande objetivo é unir a minha criatividade e os meus conhecimentos a uma missão maior, contribuindo para um mundo mais empático e conectado.
             </p>
           </div>
         </AnimatedBlock>
@@ -168,7 +168,7 @@ function About() {
         <AnimatedBlock variant={fadeUp}>
           <h2 className={styles.sectionTitle}>Percurso</h2>
           <p className={styles.timelineIntro}>
-            Uma seleção de projetos desenvolvidos em contexto académico, refletindo a aplicação prática de UX/UI design combinada com competências técnicas em front-end development.
+            Uma visão geral das minhas experiências académicas e profissionais.
           </p>
         </AnimatedBlock>
 

@@ -19,16 +19,18 @@ import ProjectCarousel from '../../components/ProjectCarousel/ProjectCarousel'
 
 const skills = {
   design: [
-    { nome: 'figma', valor: 95 },
+    { nome: 'figma', valor: 97 },
+    { nome: 'affinity', valor: 75 },
     { nome: 'illustrator', valor: 70 },
-    { nome: 'photoshop', valor: 75 },
-    { nome: 'after effects', valor: 70 },
+    { nome: 'photoshop', valor: 60 },
+    { nome: 'after effects', valor: 45 },
   ],
   frontend: [
-    { nome: 'html', valor: 98 },
-    { nome: 'css', valor: 95 },
-    { nome: 'javascript', valor: 70 },
-    { nome: 'react', valor: 80 },
+    { nome: 'html', valor: 100 },
+    { nome: 'css', valor: 100 },
+    { nome: 'tailwind', valor: 90 },
+    { nome: 'react', valor: 85 },
+    { nome: 'javascript', valor: 75 },
   ]
 }
 
@@ -84,7 +86,7 @@ function SkillItem({ nome, valor }) {
 }
 
 function Summary() {
-  const [projetoAtivo, setProjetoAtivo] = useState('default')
+  // const [projetoAtivo, setProjetoAtivo] = useState('default')
 
   return (
     <section className={styles.summary}>
@@ -103,7 +105,10 @@ function Summary() {
         </AnimatedBlock>
         <AnimatedBlock variant={fromRight} delay={0.1}>
           <p className={styles.text}>
-            Frequentei a Licenciatura em Multimédia e Tecnologias da Comunicação na Universidade de Aveiro entre 2022/23 e 2024/25. Esta formação deu-me uma base multidisciplinar que combina áreas da comunicação, tecnologia e expressão visual.
+            Frequentei a Licenciatura em Multimédia e Tecnologias da Comunicação na Universidade de Aveiro entre 2022/23 e 2024/25.
+            Esta formação deu-me uma base multidisciplinar que combina áreas da comunicação, tecnologia e expressão visual. <br></br><br></br>
+            Atualmente, frequento o Mestreado em Comunicação e Tecnologias Web na Universidade de Aveiro, aprofundando os meus conhecimentos em design de interfaces e desenvolvimento front-end,
+            com o objetivo de criar experiências digitais envolventes e funcionais.
           </p>
         </AnimatedBlock>
       </div>

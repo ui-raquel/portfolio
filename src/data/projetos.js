@@ -15,14 +15,14 @@ export const projetos = [
         hero: {
             frase: 'Cada dia é uma oportunidade para viver melhor.',
             sub: 'Laboratório Multimédia 3 · 2023/24',
-            equipa: 'Raquel Neves, Sara Pombo, Núria Pereira e Bruno Sousa',
+            equipa: 'Bruno Sousa, Núria Pereira, Raquel Neves e Sara Pombo',
             logo: '/assets/logos/maisativo.png',
         },
         contexto: 'A +Ativo é uma plataforma digital dedicada à promoção do bem-estar físico e mental da população sénior, através de desafios diários, jogos interativos e conteúdos educativos. Desenvolvida como resposta ao crescente problema de solidão entre os idosos na Europa, visa estimular a mente, fortalecer o corpo e promover conexões significativas entre gerações.',
         features: [
             {
                 titulo: 'A Minha Cozinha',
-                descricao: 'Experiência interativa com o Activi — uma raspadinha digital com receita surpresa diária — e um livro de receitas passo a passo com animações e sons, ideal para partilhar com familiares.',
+                descricao: 'Experiência interativa com o Activi, que é uma raspadinha digital com receita surpresa diária, e um livro de receitas passo a passo com animações e sons, ideal para partilhar com familiares.',
                 icon: 'CookingPot',
             },
             {
@@ -52,7 +52,7 @@ export const projetos = [
     {
         id: 'myvito',
         nome: 'My VITO',
-        descricao: 'Proposta de prototipagem que visa reforçar a ligação entre a marca VITO TOOLS e os seus utilizadores.',
+        descricao: 'Proposta de prototipagem que visa reforçar a ligação entre a marca VITO TOOLS e os seus utilizadores, tanto B2B quanto B2C.',
         tecnologias: ['figma'],
         icone: '/assets/folders/folder-myvito.png',
         cores: {
@@ -63,12 +63,12 @@ export const projetos = [
             bg: '#000000',
         },
         hero: {
-            frase: 'A ferramenta certa, na palma da tua mão.',
+            frase: 'A ferramenta certa, na palma da sua mão.',
             sub: 'Projeto Final de Licenciatura · 2024/25',
-            equipa: 'Raquel Neves, Leandro Oliveira, Maria Lourenço e Ivo Marcelino',
+            equipa: 'Ivo Marcelino, Leandro Oliveira, Maria Lourenço e Raquel Neves',
             logo: '/assets/logos/myvito.svg',
         },
-        contexto: 'A My VITO é uma proposta de prototipagem desenvolvida em Figma, que visa reforçar a ligação entre a marca VITO TOOLS, os seus clientes B2B e os consumidores finais. Este protótipo combina funcionalidades práticas para utilizadores amadores e profissionais de ferramentas, promovendo uma relação mais próxima da marca com o utilizador. Através da simulação de integrações com inteligência artificial, My VITO propõe recomendações personalizadas, conteúdos educativos e funcionalidades de gamificação para incentivar a fidelização.',
+        contexto: 'A My VITO é uma proposta de prototipagem desenvolvida em Figma, que visa reforçar a ligação entre a marca VITO TOOLS, os seus clientes B2B e os consumidores finais (B2C). Este protótipo combina funcionalidades práticas para utilizadores amadores e profissionais de ferramentas, promovendo uma relação mais próxima da marca com o utilizador. Através da simulação de integrações com inteligência artificial, My VITO propõe recomendações personalizadas, conteúdos educativos e funcionalidades de gamificação para incentivar a fidelização.',
         features: [
             {
                 titulo: 'Chatbot com IA',
@@ -82,7 +82,7 @@ export const projetos = [
             },
             {
                 titulo: 'Check-in / Check-out',
-                descricao: 'Sistema que regista automaticamente quando uma ferramenta é usada ou devolvida por um membro da equipa, facilitando a rastreabilidade em contexto profissional.',
+                descricao: 'Sistema para equipas que regista automaticamente quando uma ferramenta é usada ou devolvida por um membro, facilitando a rastreabilidade em contexto profissional.',
                 icon: 'Clipboard',
             },
             {
@@ -98,8 +98,8 @@ export const projetos = [
         ],
         capa: '/assets/mockups/myvito/myvito-ecras.png',
         mockups: [
-            '/assets/mockups/myvito/vito-assistencia.png',
             '/assets/mockups/myvito/vito-chatbot.png',
+            '/assets/mockups/myvito/vito-assistencia.png',
             '/assets/mockups/myvito/vito-checkin.png',
             '/assets/mockups/myvito/vito-iot.png',
             '/assets/mockups/myvito/vito-loc.png',
@@ -108,7 +108,7 @@ export const projetos = [
     {
         id: 'evento',
         nome: 'Evento Desportivo',
-        descricao: 'Prototipagem de dois websites e uma app mobile de suporte a um evento desportivo.',
+        descricao: 'Prototipagem de dois websites e uma app mobile de suporte a um evento desportivo num lugar remoto.',
         tecnologias: ['figma'],
         icone: '/assets/folders/folder-evento.png',
         cores: {
@@ -121,11 +121,11 @@ export const projetos = [
         hero: {
             frase: 'Três dias. Três modalidades. Um desafio.',
             sub: 'Sistemas de Comunicação Multimédia · 2023/24',
-            equipa: 'Raquel Neves, Núria Pereira e Sara Pombo',
+            equipa: 'Núria Pereira, Raquel Neves e Sara Pombo',
             logo: '/assets/logos/evento.png',
             logoStyle: { width: '40%', height: 'auto', right: '0%', top: '70%' },
         },
-        contexto: 'Mountain Challenge é um evento desportivo fictício pensado para decorrer no Parque Nacional Torres del Paine, no Chile. A prova decorre ao longo de três dias e inclui três modalidades — ciclismo, corrida e canoagem — desafiando não só os atletas como também a infraestrutura necessária para a sua cobertura e acompanhamento. Foram prototipados em Figma dois websites e uma aplicação mobile para suportar o evento.',
+        contexto: 'O Mountain Challenge é um evento desportivo fictício pensado para decorrer no Parque Nacional Torres del Paine, no Chile. A prova decorre ao longo de três dias e inclui três modalidades (ciclismo, corrida e canoagem) desafiando não só os atletas como também a infraestrutura necessária para a sua cobertura e acompanhamento. Foram prototipados em Figma dois websites e uma aplicação mobile para suportar o evento.',
         features: [
             {
                 titulo: 'Website de Promoção',
@@ -139,7 +139,7 @@ export const projetos = [
             },
             {
                 titulo: 'Aplicação Mobile',
-                descricao: 'Extensão mobile do website de acompanhamento. Notificações push, resultados imediatos, possibilidade de seguir atletas favoritos e interagir com a comunidade do evento — em qualquer lugar.',
+                descricao: 'Extensão mobile do website de acompanhamento. Notificações push, resultados imediatos, possibilidade de seguir atletas favoritos e interagir com a comunidade do evento em qualquer lugar.',
                 icon: 'Smartphone',
             },
         ],
@@ -153,7 +153,7 @@ export const projetos = [
     {
         id: 'ecoscan',
         nome: 'EcoScan',
-        descricao: 'App mobile focada no consumo consciente, que permite consultar a sustentabilidade de produtos.',
+        descricao: 'App mobile focada no consumo consciente, que permite consultar a sustentabilidade de produtos através de scan do código de barras.',
         tecnologias: ['figma', 'html', 'css', 'php'],
         icone: '/assets/folders/folder-ecoscan.png',
         cores: {
@@ -166,11 +166,11 @@ export const projetos = [
         hero: {
             frase: 'Consome melhor. Vive melhor.',
             sub: 'Projeto CBL · 2023/24',
-            equipa: 'Raquel Neves, Leandro Oliveira, Maria Lourenço, Ivo Marcelino e Miguel Campos',
+            equipa: 'Ivo Marcelino, Leandro Oliveira, Maria Lourenço, Miguel Campos e Raquel Neves',
             logo: '/assets/logos/ecoscan.svg',
             logoStyle: { width: 'auto', height: '90%', right: '-5%', bottom: '0' },
         },
-        contexto: 'EcoScan é uma aplicação mobile focada no consumo consciente e na sustentabilidade, prototipada em Figma e desenvolvida com HTML, CSS e PHP. Permite aos utilizadores consultar o nível de sustentabilidade de produtos à venda em hipermercados, ajudando a fazer escolhas mais informadas e ecológicas. Integra mercados da região de Ílhavo, promovendo a economia circular, e inclui um sistema de pontos trocáveis por descontos em espaços culturais da região.',
+        contexto: 'A EcoScan é uma aplicação mobile focada no consumo consciente e na sustentabilidade, prototipada em Figma e desenvolvida com HTML, CSS e PHP. Permite aos utilizadores consultar o nível de sustentabilidade de produtos à venda em hipermercados, ajudando a fazer escolhas mais informadas e ecológicas. Integra mercados da região de Ílhavo, promovendo a economia circular, e inclui um sistema de pontos trocáveis por descontos em espaços culturais da região.',
         features: [
             {
                 titulo: 'Consulta de Sustentabilidade',
@@ -189,7 +189,7 @@ export const projetos = [
             },
             {
                 titulo: 'Gamificação e Badges',
-                descricao: 'Sistema de emblemas atribuídos por ações sustentáveis — cada scan, compra sustentável ou visita a mercados locais gera recompensas visuais que marcam o progresso.',
+                descricao: 'Sistema de emblemas atribuídos por ações sustentáveis: cada scan, compra sustentável ou visita a mercados locais gera recompensas visuais que marcam o progresso.',
                 icon: 'Trophy',
             },
             {
@@ -210,7 +210,7 @@ export const projetos = [
     {
         id: 'teareaders',
         nome: 'TeaReaders',
-        descricao: 'Plataforma digital para criar uma comunidade envolvente entre leitores.',
+        descricao: 'Plataforma digital para criar uma comunidade envolvente e diferenciada entre leitores que adoram um bom chá.',
         tecnologias: ['figma', 'html', 'css', 'bootstrap'],
         icone: '/assets/folders/folder-teareaders.png',
         cores: {
@@ -223,14 +223,14 @@ export const projetos = [
         hero: {
             frase: 'Lê mais. Sente mais. Partilha mais.',
             sub: 'Laboratório Multimédia 2 · 2022/23',
-            equipa: 'Raquel Neves, Núria Pereira e Sara Pombo',
+            equipa: 'Núria Pereira, Raquel Neves e Sara Pombo',
             logo: '/assets/logos/teareaders.svg',
         },
-        contexto: 'TeaReaders é uma plataforma digital concebida para criar uma comunidade envolvente entre leitores que não dispensam de uma chávena de chá. Propõe uma experiência imersiva que vai além do ato de ler, valorizando o ambiente, os aromas e os sabores que acompanham a leitura. Um espaço de partilha e descoberta onde utilizadores exploram sugestões de livros, encontram pares com gostos semelhantes e associam infusões a géneros literários.',
+        contexto: 'TeaReaders é uma plataforma digital concebida para criar uma comunidade envolvente e diferenciada entre leitores que adoram um bom chá. Propõe uma experiência imersiva que vai além do ato de ler, valorizando o ambiente, os aromas e os sabores que acompanham a leitura. Um espaço de partilha e descoberta onde utilizadores exploram sugestões de livros, encontram pares com gostos semelhantes e associam infusões a géneros literários.',
         features: [
             {
                 titulo: 'Avaliação com Sabores de Chá',
-                descricao: 'Em vez de estrelas, os utilizadores avaliam livros com sabores de chás e infusões, cada um com significado simbólico — conforto, energia ou introspeção.',
+                descricao: 'Em vez de estrelas, os utilizadores avaliam livros com sabores de chás e infusões, cada um com significado simbólico, como conforto, energia ou introspeção.',
                 icon: 'Coffee',
             },
             {
@@ -240,7 +240,7 @@ export const projetos = [
             },
             {
                 titulo: '"Matchas"',
-                descricao: 'Encontra utilizadores com gostos literários semelhantes — os "matchas" — gerados com base nas leituras, avaliações e partilhas feitas na plataforma.',
+                descricao: 'Encontra utilizadores com gostos literários semelhantes, fazendo "matcha" com eles com base nas leituras, avaliações e partilhas feitas na plataforma.',
                 icon: 'UsersRound',
             },
             {
@@ -266,7 +266,7 @@ export const projetos = [
     {
         id: 'mutemind',
         nome: 'muteMIND',
-        descricao: 'App mobile para promover o bem-estar psicológico com ferramentas de autocuidado.',
+        descricao: 'App mobile para promover o bem-estar psicológico com ferramentas de autocuidado como journaling, meditação e yoga.',
         tecnologias: ['figma', 'html', 'css', 'bootstrap'],
         icone: '/assets/folders/folder-mutemind.png',
         cores: {
@@ -279,11 +279,11 @@ export const projetos = [
         hero: {
             frase: 'O teu espaço de autocuidado, num só lugar.',
             sub: 'Laboratório Multimédia 2 · 2022/23',
-            equipa: 'Raquel Neves, Núria Pereira e Sara Pombo',
+            equipa: 'Núria Pereira, Raquel Neves e Sara Pombo',
             logo: '/assets/logos/mutemind.png',
             logoStyle: { width: 'auto', height: '90%', right: '-5%', bottom: '50%' }
         },
-        contexto: 'muteMIND é uma web app desenvolvida para promover o bem-estar psicológico dos utilizadores, integrando várias ferramentas de autocuidado num único espaço digital. Reúne práticas essenciais para a saúde mental — journaling, meditação, yoga e receitas saudáveis — numa abordagem estética, organizada e funcional. Destaca-se por unificar funcionalidades que normalmente exigiriam várias apps distintas.',
+        contexto: 'A muteMIND é uma web app desenvolvida para promover o bem-estar psicológico dos utilizadores, integrando várias ferramentas de autocuidado num único espaço digital. Reúne práticas essenciais para a saúde mental, como journaling, meditação, yoga e receitas saudáveis, numa abordagem estética, organizada e funcional. Destaca-se por unificar funcionalidades que normalmente exigiriam várias apps distintas.',
         features: [
             {
                 titulo: 'Receitas Saudáveis',
@@ -317,7 +317,7 @@ export const projetos = [
     {
         id: 'symbia',
         nome: 'Symbia',
-        descricao: 'Ferramenta de analytics para sala de aula construída com React e Firebase.',
+        descricao: 'Ferramenta de apoio a docentes com captação de dados ambientais e de atenção para sala de aula construída com React e Firebase.',
         tecnologias: ['figma', 'reactjs', 'firestore', 'tailwind'],
         icone: '/assets/folders/folder-symbia.png',
         cores: {
@@ -330,9 +330,10 @@ export const projetos = [
         hero: {
             frase: 'Dados que transformam a sala de aula.',
             sub: 'Projeto Académico · 2024/25',
+            equipa: 'Diogo Ferreira, Inês Silva, Leandro Oliveira e Raquel Neves',
             logo: '/assets/logos/symbia.svg',
         },
-        contexto: 'Symbia é uma plataforma desenvolvida para apoiar os docentes na gestão e reflexão sobre o processo de ensino, antes, durante e após a aula. Construída com React, Vite, Firebase e Tailwind, a aplicação centraliza informações, recolhe dados por sensores e gera resumos inteligentes para apoiar a tomada de decisão pedagógica.',
+        contexto: 'A Symbia é uma plataforma desenvolvida para apoiar os docentes na gestão e reflexão sobre o processo de ensino, antes, durante e após a aula. Construída com React, Vite, Firebase e Tailwind, a aplicação centraliza informações, recolhe dados por sensores e gera resumos inteligentes para apoiar a tomada de decisão pedagógica.',
         features: [
             {
                 titulo: 'Centralização de Informações',
@@ -346,7 +347,7 @@ export const projetos = [
             },
             {
                 titulo: 'Resumo Inteligente',
-                descricao: 'Geração automática de resumos e insights sobre cada aula, apoiando a reflexão pedagógica e a melhoria contínua da prática docente.',
+                descricao: 'Geração automática com integração de Inteligência Artificial de resumos e insights sobre cada aula, apoiando a reflexão pedagógica e a melhoria contínua da prática docente.',
                 icon: 'ChartArea',
             },
         ],
